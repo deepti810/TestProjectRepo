@@ -21,7 +21,7 @@ public class testsript {
     public static ExtentReports extent;
     public static ExtentTest logger;
     
-    //test script
+    //test script class
 	
 	@Test
 	public void openBrowser() throws InterruptedException  {
