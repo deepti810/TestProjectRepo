@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite">
+<suite name="single">
 
 	<test thread-count="1" name="Testcases" verbose="1">
 	

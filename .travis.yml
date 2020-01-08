@@ -1,2 +1,2 @@
 language: java
-script: com.test.testscript.java
+script: mvn test -P run
