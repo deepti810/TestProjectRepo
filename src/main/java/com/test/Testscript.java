@@ -15,7 +15,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-public class testsript {
+public class Testscript {
 	public static WebDriver driver;
 	public static ExtentHtmlReporter reporter;
     public static ExtentReports extent;

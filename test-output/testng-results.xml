@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22806" started-at="2020-01-06T09:08:28Z" finished-at="2020-01-06T09:08:51Z">
+  <suite name="Suite" duration-ms="44898" started-at="2020-01-08T08:12:54Z" finished-at="2020-01-08T08:13:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22806" started-at="2020-01-06T09:08:28Z" finished-at="2020-01-06T09:08:51Z">
-      <class name="com.test.testsript">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.test.testsript@4520ebad]" name="openBrowser" duration-ms="22762" started-at="2020-01-06T14:38:29Z" finished-at="2020-01-06T14:38:51Z">
+    <test name="Testcases" duration-ms="44898" started-at="2020-01-08T08:12:54Z" finished-at="2020-01-08T08:13:39Z">
+      <class name="com.test.Testscript">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.test.Testscript@4520ebad]" name="openBrowser" duration-ms="44882" started-at="2020-01-08T13:42:55Z" finished-at="2020-01-08T13:43:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-      </class> <!-- com.test.testsript -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.test.Testscript -->
+    </test> <!-- Testcases -->
+  </suite> <!-- Suite -->
 </testng-results>
