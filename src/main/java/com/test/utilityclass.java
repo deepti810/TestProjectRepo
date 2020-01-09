@@ -19,7 +19,7 @@ public class utilityclass {
 	public static WebDriver launchChromeBrowser()
 	{
 		//System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "\\usr\\local\\share\\chromedriver");
 		driver= new ChromeDriver();
 		return driver;
 		//driver.manage().window().maximize();
