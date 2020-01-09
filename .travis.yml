@@ -4,7 +4,9 @@ language: java
 
 addons:
  chrome: stable
-
+  
+ - echo $PATH
+ 
 before_script:
  - pwd
  
