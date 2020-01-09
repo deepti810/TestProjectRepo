@@ -4,7 +4,11 @@ addons:
  chrome: stable
  
 before_script:
- - echo $PATH
+ - cd $HOME
+ - wget http://chromedriver.storage.googleapis.com/2.8/chromedriver_linux64.zip
+ - mkdir /home/travis/virtualenv/python2.7.12/bin
+ - unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python2.7.12/bin/
+ - export CHROME_BIN=chromium-browser
  
 script:
 
