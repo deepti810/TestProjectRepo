@@ -1,13 +1,14 @@
 language: java
+
+addons:
+ chrome: stable
+
+before_script:
+
+ - wget http://chromedriver.storage.googleapis.com/2.8/chromedriver_linux64.zip
+ - unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python2.7.12/bin/
+ - export CHROME_BIN=chromium-browser 
  
-  
-addons: # get google-chrome-stable
-chrome: stable
+script:
 
-
-    
-    
-script: 
-    - whereis google-chrome-stable
-    - whereis chromedriver
-    - mvn test    
+ - mvn test
