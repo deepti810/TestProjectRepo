@@ -6,7 +6,7 @@ addons:
  chrome: stable
 
 before_script:
- - PWD
+ - pwd
  
  
 script:
