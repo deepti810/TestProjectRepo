@@ -3,13 +3,11 @@ language: java
   
 addons: # get google-chrome-stable
 chrome: stable
-install:
-    - wget -N https://chromedriver.storage.googleapis.com/2.43/chromedriver_linux64.zip
-    - unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python2.7.12/bin/
-    - rm ~/chromedriver_linux64.zip
+
+
     
     
 script: 
     - whereis google-chrome-stable
     - whereis chromedriver
-    -mvn test    
+    - mvn test    
