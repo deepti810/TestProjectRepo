@@ -3,6 +3,7 @@ language: java
 addons:
  chrome: stable
 
+echo $PATH
 before_script:
 
  - wget http://chromedriver.storage.googleapis.com/2.8/chromedriver_linux64.zip
