@@ -38,7 +38,7 @@ public class Testscript {
 		driver.navigate().to(utilityclass.prop.getProperty("myntraUrl"));
 		logger.log(Status.PASS, "url opened");
 		System.out.println("URL opened");
-		WebElement linkProfile=driver.findElement(By.xpath(utilityclass.prop.getProperty("profile_xpath")));
+/*		WebElement linkProfile=driver.findElement(By.xpath(utilityclass.prop.getProperty("profile_xpath")));
 		logger.log(Status.PASS, "moved to profile");
 		
 		Actions builder= new Actions(driver);
@@ -50,7 +50,7 @@ public class Testscript {
 		WebElement login=driver.findElement(By.xpath(utilityclass.prop.getProperty("login_xpath")));
 		
 		login.click();
-		logger.log(Status.PASS, "clicked on login");
+		logger.log(Status.PASS, "clicked on login"); */
 		System.out.println("yes");
 		extent.flush();
 		
