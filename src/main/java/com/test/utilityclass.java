@@ -19,13 +19,15 @@ public class utilityclass {
 	
 	public static WebDriver launchChromeBrowser()
 	{
-		//System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
+	//	System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-	//	ChromeOptions options=new ChromeOptions();
-	//	options.addArguments("headless");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("–no-sandbox");
+		options.addArguments("–disable-dev-shm-usage");
+		driver = new ChromeDriver(options);
 		
 		
-		driver= new ChromeDriver();
+	//	driver= new ChromeDriver();
 		return driver;
 		//driver.manage().window().maximize();
 		
