@@ -42,6 +42,7 @@ public class Testscript {
 		System.out.println("email entered");
 		driver.findElement(By.xpath("//*[@type='submit']")).click();
 		System.out.println("next button clicked");
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("rajesh123!");
 		System.out.println("pwd entered");
 		
