@@ -1,5 +1,6 @@
+#set language
 language: java
-dist: trusty
+
 
 addons:
  chrome: stable
@@ -16,4 +17,4 @@ before_install:
  
 
 script:
- - mvn test -DreportPath=Reports
+ - mvn test
