@@ -12,12 +12,8 @@ before_install:
  - sudo chmod +x /usr/local/share/chromedriver
  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
  - sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
- - chromedriver --version
- - google-chrome --version
  - sleep 3
  
 
 script:
-
-
  - mvn test

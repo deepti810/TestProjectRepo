@@ -28,16 +28,19 @@ public class Testscript {
 		reporter= new ExtentHtmlReporter("./Reports/extent.html");
 		extent=new ExtentReports();
 		extent.attachReporter(reporter);
-		logger=extent.createTest("myntraprofile");
+		logger=extent.createTest("sellingprofile");
 		
 		
 		driver= utilityclass.launchChromeBrowser();		
 		logger.log(Status.PASS, "browser launched");
 		System.out.println("Browser launched in chrome");
 	
-		driver.navigate().to(utilityclass.prop.getProperty("myntraUrl"));
+		driver.navigate().to(utilityclass.prop.getProperty("sellingUrl"));
 		logger.log(Status.PASS, "url opened");
 		System.out.println("URL opened");
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("rajesh4321!");
+		System.out.println("email entered");
+		
 /*		WebElement linkProfile=driver.findElement(By.xpath(utilityclass.prop.getProperty("profile_xpath")));
 		logger.log(Status.PASS, "moved to profile");
 		
