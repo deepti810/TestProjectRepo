@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 //this is a utility class
@@ -20,6 +21,10 @@ public class utilityclass {
 	{
 		//System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		ChromeOptions options=new ChromeOptions();
+		options.addArguments("headless");
+		
+		
 		driver= new ChromeDriver();
 		return driver;
 		//driver.manage().window().maximize();
