@@ -5,15 +5,19 @@ addons:
  chrome: stable
  
 before_install:
- - wget http://chromedriver.storage.googleapis.com/2.40/chromedriver_linux64.zip -P ~/
+ - wget http://chromedriver.storage.googleapis.com/79.0.3945.16/chromedriver_linux64.zip -P ~/
  - unzip ~/chromedriver_linux64.zip -d ~/
  - rm ~/chromedriver_linux64.zip
  - sudo mv -f ~/chromedriver /usr/local/share/
  - sudo chmod +x /usr/local/share/chromedriver
  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
  - sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+ - chromedriver --version
+ - google-chrome --version
  - sleep 3
  
+
 script:
+
 
  - mvn test

@@ -24,6 +24,7 @@ public class utilityclass {
 		 
 		 ChromeOptions options=new ChromeOptions();
 		 options.addArguments("start-maximized"); // open Browser in maximized mode
+		 options.addArguments("--headless");
 		 options.addArguments("disable-infobars"); // disabling infobars
 		 options.addArguments("--disable-extensions"); // disabling extensions
 		 options.addArguments("--disable-gpu"); // applicable to windows os only
