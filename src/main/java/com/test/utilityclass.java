@@ -21,8 +21,8 @@ public class utilityclass {
 	{
 		//System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		ChromeOptions options=new ChromeOptions();
-		options.addArguments("headless");
+	//	ChromeOptions options=new ChromeOptions();
+	//	options.addArguments("headless");
 		
 		
 		driver= new ChromeDriver();
