@@ -20,12 +20,7 @@ script:
  - mvn test
  
 after_success:
- 
-  # Generate coverage report in xml format
  - coverage xml
-
-  # Install deepsource CLI
  - rtn=$(curl https://deepsource.io/cli | sh) 
  - echo $rtn
-  # Report coverage artifact to 'test-coverage' analyzer
  - ./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage.xml
