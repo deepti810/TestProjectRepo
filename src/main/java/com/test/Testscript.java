@@ -28,17 +28,17 @@ public class Testscript {
 		reporter= new ExtentHtmlReporter("./Reports/extent.html");
 		extent=new ExtentReports();
 		extent.attachReporter(reporter);
-		logger=extent.createTest("sellingprofile");
+		logger=extent.createTest("testprofile");
 		
 		
 		driver= utilityclass.launchChromeBrowser();		
 		logger.log(Status.PASS, "browser launched");
 		System.out.println("Browser launched in chrome");
 	
-		driver.navigate().to(utilityclass.prop.getProperty("sellingUrl"));
+		driver.navigate().to(utilityclass.prop.getProperty("testUrl"));
 		logger.log(Status.PASS, "url opened");
-		System.out.println("frontlineselling URL opened");
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("rajesh4321!");
+		System.out.println("test URL opened");
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("abcd");
 		System.out.println("email entered");
 		
 /*		WebElement linkProfile=driver.findElement(By.xpath(utilityclass.prop.getProperty("profile_xpath")));
