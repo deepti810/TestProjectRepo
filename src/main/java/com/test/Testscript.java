@@ -38,13 +38,17 @@ public class Testscript {
 		driver.navigate().to(utilityclass.prop.getProperty("testUrl"));
 		logger.log(Status.PASS, "url opened");
 		System.out.println("test URL opened");
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("rajesh@mobicules.com");
+		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("deepti@cloud.com");
 		System.out.println("email entered");
-		driver.findElement(By.xpath("//*[@type='submit']")).click();
-		System.out.println("next button clicked");
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("rajesh123!");
+		
+		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("deeps@12345");
 		System.out.println("pwd entered");
+		
+		driver.findElement(By.xpath("//*[@id='Login']")).click();
+		System.out.println("clicked on login");
+		
+		driver.findElement(By.xpath("//span[text()='Install']")).click();
+		System.out.println("clicked on install button");
 		
 /*		WebElement linkProfile=driver.findElement(By.xpath(utilityclass.prop.getProperty("profile_xpath")));
 		logger.log(Status.PASS, "moved to profile");
