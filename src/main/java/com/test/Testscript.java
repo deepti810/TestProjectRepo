@@ -33,11 +33,11 @@ public class Testscript {
 		
 		driver= utilityclass.launchChromeBrowser();		
 		logger.log(Status.PASS, "browser launched");
-		System.out.println("Browser launched in chrome");
+		System.out.println("Browser launched in chrome");  //browser
 	
 		driver.navigate().to(utilityclass.prop.getProperty("testUrl"));
 		logger.log(Status.PASS, "url opened");
-		System.out.println("test URL is opened");
+		System.out.println("test URL is opened");   //url
 		
 		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("deepti@cloud.com");
 		System.out.println("email entered");
