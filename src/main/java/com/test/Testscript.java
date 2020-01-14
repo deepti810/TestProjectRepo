@@ -37,7 +37,8 @@ public class Testscript {
 	
 		driver.navigate().to(utilityclass.prop.getProperty("testUrl"));
 		logger.log(Status.PASS, "url opened");
-		System.out.println("test URL opened");
+		System.out.println("test URL is opened");
+		
 		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("deepti@cloud.com");
 		System.out.println("email entered");
 		
