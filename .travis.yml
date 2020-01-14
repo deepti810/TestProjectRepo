@@ -21,4 +21,5 @@ before_install:
 
 script:
  - ip a
+ - mvn test
  
