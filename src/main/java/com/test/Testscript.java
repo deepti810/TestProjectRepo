@@ -40,7 +40,7 @@ public class Testscript {
 		System.out.println("test URL is opened");   //url
 		
 		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("deepti@cloud.com");
-		System.out.println("email entered");
+		System.out.println("email entered");   //email
 		
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("deeps@12345");
 		System.out.println("pwd entered");
