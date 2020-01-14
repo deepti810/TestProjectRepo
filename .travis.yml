@@ -4,6 +4,9 @@ language: java
 
 addons:
  chrome: stable
+ apt:
+    packages:
+      - iproute2
  
 before_install:
  - wget http://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_linux64.zip -P ~/
