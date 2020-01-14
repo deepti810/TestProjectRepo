@@ -3,6 +3,7 @@ package com.test;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -47,6 +48,11 @@ public class Testscript {
 		
 		driver.findElement(By.xpath("//*[@id='Login']")).click();
 		System.out.println("clicked on login");
+		
+		Thread.sleep(5000);
+		
+		JavascriptExecutor jse3 = (JavascriptExecutor) driver;       //scrolling window
+		jse3.executeScript("window.scrollBy(0, document.body.scrollHeight)");
 		
 		driver.findElement(By.xpath("//span[text()='Install']")).click();
 		System.out.println("clicked on install button");

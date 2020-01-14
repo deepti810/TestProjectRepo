@@ -19,10 +19,10 @@ public class utilityclass {
 	
 	public static WebDriver launchChromeBrowser()
 	{
-		//System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
+	//	System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
 		 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		 
-		 ChromeOptions options=new ChromeOptions();
+	 ChromeOptions options=new ChromeOptions();
 		 options.addArguments("start-maximized"); // open Browser in maximized mode
 		 options.addArguments("--headless");
 		 options.addArguments("disable-infobars"); // disabling infobars
@@ -30,8 +30,8 @@ public class utilityclass {
 		 options.addArguments("--disable-gpu"); // applicable to windows os only
 		 options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		 options.addArguments("--no-sandbox"); // Bypass OS security model
-		 driver = new ChromeDriver(options);
-	 //   driver= new ChromeDriver();
+		 driver = new ChromeDriver(options);  
+	//    driver= new ChromeDriver();
 		return driver;
 		//driver.manage().window().maximize();
 		
