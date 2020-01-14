@@ -17,10 +17,5 @@ before_install:
  
 
 script:
- - mvn test
+ - ip a
  
-after_success:
- - coverage xml
- - rtn=$(curl https://deepsource.io/cli | sh) 
- - echo $rtn
- - ./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage.xml
