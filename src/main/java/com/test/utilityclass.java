@@ -6,46 +6,82 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 //this is a utility class
 public class utilityclass {
 	
 	
 	public static WebDriver driver;
+	public static ExtentHtmlReporter reporter;
+	public static ExtentReports extent;
+	public static ExtentTest logger1;
 	
-	public static WebDriver launchChromeBrowser()
+public static void launchBrowser()
+	
 	{
-	//	System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
-		 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		 
-	 ChromeOptions options=new ChromeOptions();
-		 options.addArguments("start-maximized"); // open Browser in maximized mode
-		 options.addArguments("--headless");
-		 options.addArguments("disable-infobars"); // disabling infobars
-		 options.addArguments("--disable-extensions"); // disabling extensions
-		 options.addArguments("--disable-gpu"); // applicable to windows os only
-		 options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-		 options.addArguments("--no-sandbox"); // Bypass OS security model
-		 driver = new ChromeDriver(options);  
-	//    driver= new ChromeDriver();
-		return driver;
-		//driver.manage().window().maximize();
-		
-		
+		     //   System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
+	        //  driver = new ChromeDriver();
+	
+		         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		         ChromeOptions options=new ChromeOptions();
+				 options.addArguments("start-maximized"); // open Browser in maximized mode
+				 options.addArguments("--headless");
+				 options.addArguments("disable-infobars"); // disabling infobars
+				 options.addArguments("--disable-extensions"); // disabling extensions
+				 options.addArguments("--disable-gpu"); // applicable to windows os only
+				 options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+				 options.addArguments("--no-sandbox"); // Bypass OS security model
+				 driver = new ChromeDriver(options);  
+				 
+			
+				 
+				 System.out.println("Browser is initiated");
+	
 	}
 	
-	public static void launchFirefoxBrowser()
-		{
-			System.setProperty("webdriver.gecko.driver", "D:\\Drivers\\geckodriver.exe");
-			driver= new FirefoxDriver();
-			
+	public static void type(String Locator, String key) {
+		if (Locator.endsWith("_Xpath")) {
+			driver.findElement(By.xpath(properties.getProperty(Locator))).sendKeys(properties.getProperty(key));
+
+		} else if (Locator.endsWith("_ID")) {
+			driver.findElement(By.id(properties.getProperty(Locator))).sendKeys(properties.getProperty(key));
 		}
+	}
+
+	public static void click(String Locator) {
+		if (Locator.endsWith("_Xpath")) {
+			driver.findElement(By.xpath(properties.getProperty(Locator))).click();
+
+		} else if (Locator.endsWith("_ID")) {
+			driver.findElement(By.id(properties.getProperty(Locator))).click();
+			
+
+		}
+	}
+
+	public static String getObject(String Data) throws IOException {
+		String data = properties.getProperty(Data);
+		return data;
+
+	}
+	
+	public static String getPropertyValue(String key) {
+
+		return properties.getProperty(key);
+}
+
 		
-public static Properties prop;
+public static Properties properties;
 	
 	static{
 		InputStream input = null;
@@ -54,14 +90,31 @@ public static Properties prop;
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		 prop = new Properties();
+		 properties = new Properties();
 		try {
-			prop.load(input);
+			properties.load(input);
 			
 		} catch (IOException e) {
 			e.printStackTrace();
+	
 		}
-	}		
+
+	
+	
+	}	
+	
+	@BeforeTest
+	public void createReport() {
+		reporter = new ExtentHtmlReporter("./extent.html");
+		extent = new ExtentReports();
+		extent.attachReporter(reporter);
+	}
+
+	@AfterTest
+	public void flush() throws IOException {
+		extent.flush();
+		}
+	
 	}
 	
 
