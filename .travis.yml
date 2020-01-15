@@ -4,9 +4,6 @@ language: java
 
 addons:
  chrome: stable
- apt:
-    packages:
-      - iproute2
  
 before_install:
 
@@ -22,6 +19,5 @@ before_install:
  
 
 script:
- - ip a
  - mvn test
  
