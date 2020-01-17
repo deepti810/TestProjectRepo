@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="92626" started-at="2020-01-15T09:28:38Z" finished-at="2020-01-15T09:30:11Z">
+  <suite name="Default suite" duration-ms="80020" started-at="2020-01-17T07:09:50Z" finished-at="2020-01-17T07:11:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="92626" started-at="2020-01-15T09:28:38Z" finished-at="2020-01-15T09:30:11Z">
+    <test name="Default test" duration-ms="80020" started-at="2020-01-17T07:09:50Z" finished-at="2020-01-17T07:11:10Z">
       <class name="com.test.Testscript">
-        <test-method status="PASS" signature="createReport()[pri:0, instance:com.test.Testscript@2038ae61]" name="createReport" is-config="true" duration-ms="277" started-at="2020-01-15T14:58:38Z" finished-at="2020-01-15T14:58:38Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:com.test.Testscript@5f9d02cb]" name="createReport" is-config="true" duration-ms="154" started-at="2020-01-17T12:39:50Z" finished-at="2020-01-17T12:39:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.test.Testscript@2038ae61]" name="openBrowser" duration-ms="91532" started-at="2020-01-15T14:58:38Z" finished-at="2020-01-15T15:00:10Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.test.Testscript@5f9d02cb]" name="login" duration-ms="79442" started-at="2020-01-17T12:39:50Z" finished-at="2020-01-17T12:41:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:com.test.Testscript@2038ae61]" name="flush" is-config="true" duration-ms="774" started-at="2020-01-15T15:00:10Z" finished-at="2020-01-15T15:00:11Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:com.test.Testscript@5f9d02cb]" name="flush" is-config="true" duration-ms="398" started-at="2020-01-17T12:41:09Z" finished-at="2020-01-17T12:41:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->

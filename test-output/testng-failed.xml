@@ -6,7 +6,7 @@
       <class name="com.test.Testscript">
         <methods>
           <include name="flush"/>
-          <include name="openBrowser"/>
+          <include name="login"/>
           <include name="createReport"/>
         </methods>
       </class> <!-- com.test.Testscript -->

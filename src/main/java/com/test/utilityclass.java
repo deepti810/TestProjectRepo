@@ -30,7 +30,7 @@ public static void launchBrowser()
 	
 	{
 		       System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
-	         driver = new ChromeDriver();
+	           driver = new ChromeDriver();
 	
 		     /*    System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		         ChromeOptions options=new ChromeOptions();
