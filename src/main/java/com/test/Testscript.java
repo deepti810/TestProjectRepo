@@ -8,7 +8,7 @@ public class Testscript extends utilityclass {
 		
 		launchBrowser();
 		System.out.println("browser launched");
-		driver.get("www.myntra.com");
+		driver.get("https://login.salesforce.com/");
 		
 		System.out.println("url opened");
 	}
