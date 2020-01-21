@@ -21,17 +21,3 @@ before_install:
 script:
  - mvn test
  
-notifications:
- email: false
- 
- slack:
- rooms: 
- - secure: "DDDpqe3HOmCFIstLmet/22egnlnIz+eeN9SZTZKEsfosen8ijw/qc1EwM4GdNDhB5xt5oEJmumsKy014R5VBC9uJ3kdppbCrpW8BevrjoXa6/gDfZ0zyce+SLf7ZW/glLzP1uHsl1Pq8HLGKZg1SDSraypSMSubTvGhZ5JM/lF7pq+Vi00DdkioAbt9hyqsLN1RgyVTc38oHm8R3gQ9LbdLeEQ828DB4mwOXTZM2IGHR4Dcgwg2655JFNRzn6IaVjKD3HHdtAk4LHyE7UQeLhomKGoKAtDU8YeBAw+ePm5Jm31+H1Q6w8rxqMRTpv7xCTxIhiWFaL4shQLRcMAsMSRHN8sNkBnp5pSr6sDi/uYiMUQkLo+OpHdLq8D8W7shGNCIqOegCMkvj5oB6uXiVO4G5s1gYR4LlYgfr692k3yXKefhJIV9BVLR6YpkHrgWugqXvNA0+gHlXc44Xq31+qtAdTKQctQUOVef8EkrdBndEASf63sdX56Vp20aUrtXuYcufLQanm226P7i+vwHEjjOaS5h2uBiLQG2z4s1PdpYcfPQ67zm+Vj53J3sxCPN+7hmePcKKLiNJoo3sgCU84X1FKD8hKR1PaY2cYklMF2HTxBIXKIw8uKLIFrhTdM6M8rtp87YpgiT2vUk7iyzP8j48jyypRB3RvJeOXR61/uc="
- 
- on_success: always
- 
- template:
- - "*Build*: %{commit_message}"
- - "*Status*: %{result}"
- - "*Duration*: %{elapsed_time}"
- - "*Details*: <%{build_url}|#%{build_number}>"
