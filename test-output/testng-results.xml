@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="80020" started-at="2020-01-17T07:09:50Z" finished-at="2020-01-17T07:11:10Z">
+  <suite name="Default suite" duration-ms="21588" started-at="2020-01-27T09:10:11Z" finished-at="2020-01-27T09:10:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="80020" started-at="2020-01-17T07:09:50Z" finished-at="2020-01-17T07:11:10Z">
+    <test name="Default test" duration-ms="21588" started-at="2020-01-27T09:10:11Z" finished-at="2020-01-27T09:10:33Z">
       <class name="com.test.Testscript">
-        <test-method status="PASS" signature="createReport()[pri:0, instance:com.test.Testscript@5f9d02cb]" name="createReport" is-config="true" duration-ms="154" started-at="2020-01-17T12:39:50Z" finished-at="2020-01-17T12:39:50Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:com.test.Testscript@14acaea5]" name="createReport" is-config="true" duration-ms="361" started-at="2020-01-27T14:40:11Z" finished-at="2020-01-27T14:40:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.test.Testscript@5f9d02cb]" name="login" duration-ms="79442" started-at="2020-01-17T12:39:50Z" finished-at="2020-01-17T12:41:09Z">
+        <test-method status="PASS" signature="print()[pri:1, instance:com.test.Testscript@14acaea5]" name="print" duration-ms="9266" started-at="2020-01-27T14:40:12Z" finished-at="2020-01-27T14:40:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:com.test.Testscript@5f9d02cb]" name="flush" is-config="true" duration-ms="398" started-at="2020-01-17T12:41:09Z" finished-at="2020-01-17T12:41:10Z">
+        </test-method> <!-- print -->
+        <test-method status="PASS" signature="testing()[pri:2, instance:com.test.Testscript@14acaea5]" name="testing" duration-ms="11925" started-at="2020-01-27T14:40:21Z" finished-at="2020-01-27T14:40:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testing -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:com.test.Testscript@14acaea5]" name="flush" is-config="true" duration-ms="3" started-at="2020-01-27T14:40:33Z" finished-at="2020-01-27T14:40:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->

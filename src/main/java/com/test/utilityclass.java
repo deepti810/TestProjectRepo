@@ -1,12 +1,17 @@
 package com.test;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,6 +21,7 @@ import org.testng.annotations.BeforeTest;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.utils.FileUtil;
 
 //this is a utility class
 public class utilityclass {
@@ -29,8 +35,8 @@ public class utilityclass {
 public static void launchBrowser()
 	
 	{
-		    //   System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
-	         //  driver = new ChromeDriver();
+		   //    System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
+	        //   driver = new ChromeDriver();
 	
 		        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		         ChromeOptions options=new ChromeOptions();
@@ -80,6 +86,17 @@ public static void launchBrowser()
 		return properties.getProperty(key);
 }
 
+	public static String capture(WebDriver driver, String path) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		
+	   String dest = System.getProperty("user.dir")+"\\Screenshots\\"+path+"\\"+"screenshot.png";
+		System.out.println("ScreenShot Destination : "+dest);
+		File destination = new File(dest);
+		FileUtils.copyFile(source, destination);
+
+		return dest;
+	}
 		
 public static Properties properties;
 	
