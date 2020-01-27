@@ -86,7 +86,7 @@ public static void launchBrowser()
 		return properties.getProperty(key);
 }
 
-	public static String capture(WebDriver driver, String path) throws IOException {
+	public String capture(WebDriver driver, String path) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		
