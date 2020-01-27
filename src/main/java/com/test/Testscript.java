@@ -13,7 +13,7 @@ public class Testscript extends utilityclass {
 		driver.get("https://login.salesforce.com/");
 		
 		System.out.println("url opened");
-		capture(driver,"login");
+		capture();
 	}
 	
 	@Test(priority=2)
@@ -21,7 +21,7 @@ public class Testscript extends utilityclass {
 	{
 		launchBrowser();
 		driver.get("https://www.browserstack.com/guide/take-screenshots-in-selenium");
-		capture(driver,"browserstack");
+		capture();
 	}
 }
 	

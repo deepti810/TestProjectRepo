@@ -86,16 +86,16 @@ public static void launchBrowser()
 		return properties.getProperty(key);
 }
 
-	public String capture(WebDriver driver, String path) throws IOException {
+	public void capture() throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		
-	   String dest = System.getProperty("user.dir")+"/Screenshots/"+path+"/"+"screenshot.png";
+	   String dest = System.getProperty("user.dir")+"/Screenshots/"+"screenshot.png";
 		System.out.println("ScreenShot Destination : "+dest);
 		File destination = new File(dest);
 		FileUtils.copyFile(source, destination);
 
-		return dest;
+	//	return dest;
 	}
 		
 public static Properties properties;
