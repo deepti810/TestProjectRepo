@@ -7,6 +7,7 @@
         <methods>
           <include name="flush"/>
           <include name="print"/>
+          <include name="testing"/>
           <include name="createReport"/>
         </methods>
       </class> <!-- com.test.Testscript -->

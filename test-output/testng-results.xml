@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21588" started-at="2020-01-27T09:10:11Z" finished-at="2020-01-27T09:10:33Z">
+  <suite name="Default suite" duration-ms="20890" started-at="2020-01-27T12:03:20Z" finished-at="2020-01-27T12:03:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21588" started-at="2020-01-27T09:10:11Z" finished-at="2020-01-27T09:10:33Z">
+    <test name="Default test" duration-ms="20890" started-at="2020-01-27T12:03:20Z" finished-at="2020-01-27T12:03:41Z">
       <class name="com.test.Testscript">
-        <test-method status="PASS" signature="createReport()[pri:0, instance:com.test.Testscript@14acaea5]" name="createReport" is-config="true" duration-ms="361" started-at="2020-01-27T14:40:11Z" finished-at="2020-01-27T14:40:12Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:com.test.Testscript@14acaea5]" name="createReport" is-config="true" duration-ms="228" started-at="2020-01-27T17:33:20Z" finished-at="2020-01-27T17:33:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="print()[pri:1, instance:com.test.Testscript@14acaea5]" name="print" duration-ms="9266" started-at="2020-01-27T14:40:12Z" finished-at="2020-01-27T14:40:21Z">
+        <test-method status="PASS" signature="print()[pri:1, instance:com.test.Testscript@14acaea5]" name="print" duration-ms="9090" started-at="2020-01-27T17:33:21Z" finished-at="2020-01-27T17:33:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- print -->
-        <test-method status="PASS" signature="testing()[pri:2, instance:com.test.Testscript@14acaea5]" name="testing" duration-ms="11925" started-at="2020-01-27T14:40:21Z" finished-at="2020-01-27T14:40:33Z">
+        <test-method status="PASS" signature="testing()[pri:2, instance:com.test.Testscript@14acaea5]" name="testing" duration-ms="11548" started-at="2020-01-27T17:33:30Z" finished-at="2020-01-27T17:33:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:com.test.Testscript@14acaea5]" name="flush" is-config="true" duration-ms="3" started-at="2020-01-27T14:40:33Z" finished-at="2020-01-27T14:40:33Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:com.test.Testscript@14acaea5]" name="flush" is-config="true" duration-ms="1" started-at="2020-01-27T17:33:41Z" finished-at="2020-01-27T17:33:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
