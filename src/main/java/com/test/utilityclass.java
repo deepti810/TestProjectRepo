@@ -90,7 +90,7 @@ public static void launchBrowser()
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		
-	   String dest = System.getProperty("user.dir")+"\\Screenshots\\"+path+"\\"+"screenshot.png";
+	   String dest = System.getProperty("user.dir")+"/Screenshots/"+path+"/"+"screenshot.png";
 		System.out.println("ScreenShot Destination : "+dest);
 		File destination = new File(dest);
 		FileUtils.copyFile(source, destination);
